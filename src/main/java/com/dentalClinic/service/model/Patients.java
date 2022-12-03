@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  *
  */
 @Document("patients")
-public class patients {
+public class Patients {
 
 	@Id
 	private String id;
@@ -22,7 +22,7 @@ public class patients {
     private String lastName;
 	
 	@Column(name="address")
-    private String addre;
+    private String address;
 
 	public String getId() {
 		return id;
@@ -49,11 +49,11 @@ public class patients {
 	}
 
 	public String getAddre() {
-		return addre;
+		return address;
 	}
 
-	public void setAddre(String addre) {
-		this.addre = addre;
+	public void setAddre(String address) {
+		this.address = address;
 	}
 
     
